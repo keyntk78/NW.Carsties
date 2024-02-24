@@ -52,6 +52,9 @@ namespace AuctionService.Data.Migrations
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<string>("Winner")
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
 
                     b.ToTable("Auctions");
